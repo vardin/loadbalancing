@@ -32,7 +32,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>kafka.kafka_application</mainClass>
+                            <mainClass>producer</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
