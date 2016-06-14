@@ -32,7 +32,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>producer</mainClass>
+                            <mainClass>loadbalancing.producer</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
