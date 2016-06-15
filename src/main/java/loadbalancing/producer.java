@@ -13,7 +13,7 @@ public class producer {
         props.put("serializer.class", "kafka.serializer.StringEncoder");
         ProducerConfig producerConfig = new ProducerConfig(props);
         Producer<String, String> producer = new Producer<String, String>(producerConfig);
-        KeyedMessage<String, String> message = new KeyedMessage<String, String>("test1", "Hello, World!");  
+        KeyedMessage<String, String> message = new KeyedMessage<String, String>("test", "Hello, World!");  
         producer.send(message);
         producer.close();
     }
