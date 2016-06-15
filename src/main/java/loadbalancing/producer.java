@@ -1,10 +1,13 @@
 package loadbalancing;
 
+import com.google.common.io.Resources;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerRecord;
+
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
-import kafka.javaapi.producer.Producer;
-import kafka.producer.KeyedMessage;
-import kafka.producer.ProducerConfig;
 
 public class producer {
     public static void main(String[] args) throws Exception {
