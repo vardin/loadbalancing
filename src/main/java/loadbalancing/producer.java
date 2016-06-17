@@ -29,10 +29,10 @@ public class producer {
                 // every so often send to a different topic
                 if (i % 1000 == 0) {
                     producer.send(new ProducerRecord<String, String>(
-                            "fast-messages",
+                            "supercom",
                             String.format("{\"type\":\"marker\", \"t\":%.3f, \"k\":%d}", System.nanoTime() * 1e-9, i)));
                     producer.send(new ProducerRecord<String, String>(
-                            "summary-markers",
+                            "vardin",
                             String.format("{\"type\":\"other\", \"t\":%.3f, \"k\":%d}", System.nanoTime() * 1e-9, i)));
                     producer.flush();
                     System.out.println("Sent msg number " + i);
