@@ -23,7 +23,7 @@ public class producer {
             for (int i = 0; i < 1000000; i++) {
                 // send lots of messages
                 producer.send(new ProducerRecord<String, String>(
-                        "fast-messages",
+                        "supercom",
                         String.format("{\"type\":\"test\", \"t\":%.3f, \"k\":%d}", System.nanoTime() * 1e-9, i)));
 
                 // every so often send to a different topic
